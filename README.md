@@ -5,6 +5,11 @@ Reads lines of text from a text file, and then adds a conky center
 alignment object (i.e. ${alignc}) to the beginning of each line
 while equalizing the length of each line.
 
+Example:
+- Text block with varied length lines in text file...
+<img src="./images/current_motd.png">
+
+- Text block displayed in Conky at various widths...
 <img src="./images/ConkyCentering2.png" style="width:100%;">
 
 Usage:
