@@ -5,6 +5,8 @@ Reads lines of text from a text file, and then adds a conky center
 alignment object (i.e. ${alignc}) to the beginning of each line
 while equalizing the length of each line.
 
+[Examples of centered text block in Conky](images/ConkyCentering2.png)
+
 Usage:
 - Add alignc.lua to a load_lua line in your .conkyrc file.
 - Add a $lua_parse line with a text file containing a block of
