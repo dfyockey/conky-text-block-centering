@@ -20,3 +20,6 @@ Usage:
 - Use a monospace font. If your default font isn't monospace,
   preceed the $lua_parse line with a $font line to change to
   monospace and follow it with a $font line to change it back.
+- If quotation marks or apostrophes are needed in a text block,
+  use straight quotes. Curly quotes (e.g. Unicode characters U+2018 and U+2019)
+  can cause misalignment of the text block.
