@@ -59,7 +59,7 @@ function conky_alignc(textfile)
 		
 		-- Read in lines and determine which is the longest
 		for line in io.lines(textfile) do
-			local len = string.len(line)
+			local len = utf8.len(line)
 			if len > longest then longest = len end
 			lines[#lines + 1] = line
 		end
@@ -70,7 +70,7 @@ function conky_alignc(textfile)
 		-- difference to the line's end to equalize its length to that
 		-- of the longest line.
 		for i = 1, #lines do
-			local len = string.len(lines[i])
+			local len = utf8.len(lines[i])
 			lines[i] = ctrcode..lines[i]..string.rep(" ", longest-len)
 		end
 		
